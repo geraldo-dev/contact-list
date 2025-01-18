@@ -16,7 +16,14 @@ function alert_mensagen(msg, color){
 }
 
 function delete_contact(id){
+    const li = document.querySelectorAll('li');
 
+    li.forEach((i)=>{
+        if(i.id === String(id)){
+            i.remove();
+            alert_mensagen('contato deletado', 'green');
+        }
+    });
 }
 
 function created (e){
@@ -40,6 +47,9 @@ function created (e){
         ul.appendChild(li);
 
         count_id++;
+
+        username.value = '';
+        phone.value = '';
 
         alert_mensagen('salvo com sucesso', 'green');
     }
