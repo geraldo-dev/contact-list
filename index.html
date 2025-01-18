@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Google Fonts Pre Connect -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <!-- Meta Tags -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-
-  <!-- CSS Files Links -->
-  <link rel="stylesheet" href="./styles.css">
-
-  <!-- Title -->
-  <title>lista de contatos</title>
-</head>
-<body>
-
-    <main>
-        <div class="class">
-            <h1>Meus Contatos</h1>
-            <form>
-                <div>
-                    <label>nome:</label>
-                    <input type="text" id="username" required placeholder="nome do contato">
-                </div>
-                <div>
-                    <label>Telefone: </label>
-                    <input type="number" id="username" required placeholder="numero">
-                </div>
-                <div>
-                    <button type="submit">salvar</button>
-                </div>
-            </form>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- icon JavaScript -->
+    <link rel="shortcut icon" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="class">
+      <h1>Meus Contatos</h1>
+      <div id="mensagens" ></div>
+      <form>
+        <div>
+          <label>nome:</label>
+          <input
+            type="text"
+            id="username"
+            required
+            placeholder="nome do contato"
+          />
         </div>
-    
-    </main>
-
-  <noscript>Your browser don't support JavaScript!</noscript>
-  <script src="./scripts.js"></script>
-</body>
+        <div>
+          <label>Telefone: </label>
+          <input
+            type="number"
+            id="phone"
+            required
+            placeholder="numero de telefone"
+          />
+        </div>
+        <div>
+          <button type="submit">salvar</button>
+        </div>
+      </form>
+      <div class="class">
+        <ul></ul>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
 </html>
